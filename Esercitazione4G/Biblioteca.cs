@@ -110,11 +110,11 @@ namespace Esercitazione4G
 
         public Biblioteca(string nome, string indirizzo, DateTime orarioApertura, DateTime orarioChiusura, List<Libro> libri)
         {
-            _nome = nome;
-            _indirizzo = indirizzo;
-            _orarioApertura = orarioApertura;
-            _orarioChiusura = orarioChiusura;
-            _libri = libri;
+            Nome = nome;
+            Indirizzo = indirizzo;
+            OrarioApertura = orarioApertura;
+            OrarioChiusura = orarioChiusura;
+            Libri = libri;
         }
 
         public override string ToString()
