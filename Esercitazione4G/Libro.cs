@@ -13,9 +13,18 @@ namespace Esercitazione4G
         private string _editore;
         private int _nPagine;
 
+        public Libro(string a, string t, int ap, string e, int n)
+        {
+            _autore = a;
+            _titolo = t;
+            _annoPubblicazione = ap;
+            _editore = e;
+            _nPagine = n;
+        }
+
         public string Autore
         {
-            get => default;
+            get => _autore;
             set
             {
                 _autore = value;
@@ -24,7 +33,7 @@ namespace Esercitazione4G
 
         public string Titolo
         {
-            get => default;
+            get => _titolo;
             set
             {
                 _titolo = value;
@@ -33,7 +42,7 @@ namespace Esercitazione4G
 
         public int AnnoPubblicazione
         {
-            get => default;
+            get => _annoPubblicazione;
             set
             {
                 _annoPubblicazione = value;
@@ -42,7 +51,7 @@ namespace Esercitazione4G
 
         public string Editore
         {
-            get => default;
+            get => _editore;
             set
             {
                 _editore = value;
@@ -51,7 +60,7 @@ namespace Esercitazione4G
 
         public int NPagine
         {
-            get => default;
+            get => _nPagine;
             set
             {
                 _nPagine = value;
@@ -62,5 +71,7 @@ namespace Esercitazione4G
         {
             return "Autore: " + _autore + "  Titolo: " + _titolo + "  Anno di pubblicazione: " + _annoPubblicazione + "  Editore: " + _editore + "  Numero di pagine: " + _nPagine;
         }
+
+
     }
 }
