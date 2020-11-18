@@ -88,12 +88,33 @@ namespace Esercitazione4G
             }
         }
 
-        public Biblioteca(string nome, string indirizzo, DateTime orarioApertura, DateTime orarioChiusura)
+        private List<Libro> _libri;
+        public List<Libro> Libri
+        {
+            get
+            {
+                return Libri;
+            }
+            set
+            {
+                if(Libri.Count <= 0)
+                {
+                    throw new Exception("La biblioteca non ha libri disponibili al momento");
+                }
+                else
+                {
+                    _libri = Libri;
+                }
+            }
+        }
+
+        public Biblioteca(string nome, string indirizzo, DateTime orarioApertura, DateTime orarioChiusura, List<Libro> libri)
         {
             _nome = nome;
             _indirizzo = indirizzo;
             _orarioApertura = orarioApertura;
             _orarioChiusura = orarioChiusura;
+            _libri = libri;
         }
 
         public override string ToString()
