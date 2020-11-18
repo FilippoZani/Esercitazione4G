@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListBox x:Name="lstLibri" HorizontalAlignment="Left" Height="369" Margin="10,40,0,0" VerticalAlignment="Top" Width="194"/>
+        <Label Content="Libri" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="166"/>
+        <Button x:Name="btnAggiungi" Content="Aggiungi Libro" HorizontalAlignment="Left" Height="86" Margin="221,232,0,0" VerticalAlignment="Top" Width="179"/>
+        <Button x:Name="btnRimuovi" Content="Rimuovi libro" HorizontalAlignment="Left" Height="86" Margin="221,322,0,0" VerticalAlignment="Top" Width="179"/>
+        <Button x:Name="btnRicercaDaNome" Content="Ricerca libro da nome" HorizontalAlignment="Left" Height="87" Margin="603,322,0,0" VerticalAlignment="Top" Width="179"/>
+        <TextBox x:Name="txtRicercaDaNome" HorizontalAlignment="Left" Height="86" Margin="603,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
+        <Button x:Name="btnNumeroLibri" Content="Trova numero Libri" HorizontalAlignment="Left" Height="91" Margin="221,137,0,0" VerticalAlignment="Top" Width="179"/>
+        <Button x:Name="btnRicercaDaAutore" Content="Ricerca libro da autore" HorizontalAlignment="Left" Height="87" Margin="419,323,0,0" VerticalAlignment="Top" Width="169"/>
+        <TextBox x:Name="txtRicercaDaAutore" HorizontalAlignment="Left" Height="86" Margin="419,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <Button x:Name="btnTempoLettura" Content="Controlla tempo lettura" HorizontalAlignment="Left" Height="92" Margin="221,40,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label Content="Autore                                           Nome" HorizontalAlignment="Left" Height="29" Margin="419,198,0,0" VerticalAlignment="Top" Width="363"/>
+
     </Grid>
 </Window>
