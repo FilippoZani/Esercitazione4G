@@ -58,6 +58,9 @@ namespace Esercitazione4G
             }
         }
 
-        
+        public override string ToString()
+        {
+            return "Autore: " + _autore + "  Titolo: " + _titolo + "  Anno di pubblicazione: " + _annoPubblicazione + "  Editore: " + _editore + "  Numero di pagine: " + _nPagine;
+        }
     }
 }
