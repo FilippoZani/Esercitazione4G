@@ -15,11 +15,11 @@ namespace Esercitazione4G
 
         public Libro(string a, string t, int ap, string e, int n)
         {
-            _autore = a;
-            _titolo = t;
-            _annoPubblicazione = ap;
-            _editore = e;
-            _nPagine = n;
+            Autore = a;
+            Titolo = t;
+            AnnoPubblicazione = ap;
+            Editore = e;
+            NPagine = n;
         }
 
         public string Autore
@@ -72,6 +72,20 @@ namespace Esercitazione4G
             return "Autore: " + _autore + "  Titolo: " + _titolo + "  Anno di pubblicazione: " + _annoPubblicazione + "  Editore: " + _editore + "  Numero di pagine: " + _nPagine;
         }
 
+        public string ReadingTime(int n)
+        {
+            if (n < 100)
+            {
+                return "Ore di lettura: 1";
+            }
 
+            if(n>=100 || n <= 200)
+            {
+                return "Ore di lettura: 2";
+            }
+
+            return "Ore di lettura: superiori a 2";
+
+        }
     }
 }
